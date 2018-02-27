@@ -1,2 +1,2 @@
 #! /bin/sh
-ssh hw.gg
+ssh -R 52698:localhost:52698 hw.gg
