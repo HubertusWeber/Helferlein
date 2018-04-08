@@ -1,5 +1,9 @@
 #! /usr/bin/env python
 
+#
+# This Helferlein adds a backup remote with the name bitbucket to a git repo
+#
+
 import os
 import sys
 

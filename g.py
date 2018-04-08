@@ -1,5 +1,9 @@
 #! /usr/bin/env python
 
+#
+# This Helferlein searches recursively for a string in all files of a directory
+#
+
 import os
 import string
 import sys

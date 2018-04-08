@@ -1,5 +1,14 @@
 #! /usr/bin/env python
 
+#
+# This Helferlein is my very own personal updator
+# First it pulls the newest version of the specified project from GitHub
+# Then it executes the runscript of that project with the restart option
+# Currently supports hw and fefe with more to come as I get busy
+# If you are reading this: Thank you so much for showing interest in my code <3
+# BUT this Helferlein is probably absolutely useless to you ;D
+#
+
 import os
 import sys
 

@@ -1,5 +1,10 @@
 #! /usr/bin/env python
 
+#
+# This Helferlein updates / upgrades all tools that need it mainly (as the name implies) homebrew
+# It can be called with a specific tool as command line argument or "alle" to update / upgrade everything
+#
+
 import os
 import sys
 
