@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python2
 
 #
 # This Helferlein updates / upgrades all tools that need it mainly (as the name implies) homebrew

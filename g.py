@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python2
 
 #
 # This Helferlein searches recursively for a string in all files of a directory
