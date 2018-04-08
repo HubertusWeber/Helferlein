@@ -12,6 +12,7 @@ helferlein = {
     "bu.py": "bu",
     "bucket.py": "bucket",
     "gg.py": "gg",
+    "gp.py": "gp",
     "hs.sh": "hs",
     "s.sh": "s",
 }
