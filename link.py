@@ -13,8 +13,6 @@ helferlein = {
     "bucket.py": "bucket",
     "gg.py": "gg",
     "gp.py": "gp",
-    "hs.sh": "hs",
-    "s.sh": "s",
 }
 
 helferlein_path = os.path.dirname(os.path.realpath(__file__)) + "/"
