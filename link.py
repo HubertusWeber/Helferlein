@@ -9,6 +9,7 @@ import os
 import sys
 
 helferlein = {
+    "abs.py": "abs",
     "bu.py": "bu",
     "bucket.py": "bucket",
     "gg.py": "gg",
