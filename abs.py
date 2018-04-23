@@ -9,6 +9,6 @@ import os
 import sys
 
 if len(sys.argv) > 1:
-    print os.path.abspath(sys.argv[1])
+    print(os.path.abspath(sys.argv[1]))
 else:
-    print os.getcwd()
+    print(os.getcwd())
