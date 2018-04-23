@@ -6,5 +6,5 @@
 </p>
 
 <p align="center">
-	<a href="https://www.paypal.me/HubertusWeber"><img src="https://img.shields.io/chrome-web-store/price/nimelepbpejjlbmoobocpfnjhihnpked.svg?style=for-the-badge"/></a><img src="https://forthebadge.com/images/badges/made-with-python.svg"><img src="https://forthebadge.com/images/badges/makes-people-smile.svg"><img src="https://forthebadge.com/images/badges/built-with-love.svg"><img src="https://forthebadge.com/images/badges/for-you.svg"><a href="https://twitter.com/HubertusWeber"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=for-the-badge"></a>
+	<img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg"/><img src="https://forthebadge.com/images/badges/made-with-python.svg"><img src="https://forthebadge.com/images/badges/makes-people-smile.svg"><img src="https://forthebadge.com/images/badges/built-with-love.svg"><img src="https://forthebadge.com/images/badges/for-you.svg">
 </p>
