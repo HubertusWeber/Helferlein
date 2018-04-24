@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 
 #
 # This Helferlein adds a backup remote with the name bitbucket to a git repo

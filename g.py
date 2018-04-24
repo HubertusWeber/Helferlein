@@ -1,12 +1,12 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 
 #
 # This Helferlein searches recursively for a string in all files of a directory
 #
 
 import os
-import string
 import sys
 
-os.system('grep -rnw . -e "' +
-          string.join(sys.argv[1:], ' ') + '" --color=always')
+args = str.join(" ", sys.argv[1:])
+
+os.system("grep -rnw . -e \"" + args + "\" --color=always")

@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 
 #
 # This Helferlein returns the absolute path of every file or directory given to it

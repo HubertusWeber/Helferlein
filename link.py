@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 
 #
 # This is a Meta-Helferlein, a Helferlein to help other Helferlein
@@ -24,6 +24,11 @@ if len(sys.argv) < 2:
 else:
     output_path = sys.argv[1]
 
-for src, dst in helferlein.iteritems():
-    os.system("ln -s " + os.path.join(helferlein_path, src) +
-              " " + os.path.join(output_path, dst))
+for src, dst in helferlein.items():
+    src_path = os.path.join(helferlein_path, src)
+    dst_path = os.path.join(output_path, dst)
+    try:
+        os.remove(dst_path)
+    except OSError:
+        pass
+    os.system("ln -s " + src_path + " " + dst_path)

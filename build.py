@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 
 #
 # This is a Meta-Helferlein, a Helferlein to help other Helferlein
@@ -13,7 +13,7 @@ import os
 import shutil
 import sys
 
-include_path = "/usr/include/python2.7"
+include_path = "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/include/python3.6m"
 
 helferlein = {
     "abs.py": "abs",
@@ -36,15 +36,15 @@ if not os.path.exists(build_path):
     os.makedirs(build_path)
 
 
-for src, dst in helferlein.iteritems():
+for src, dst in helferlein.items():
     shutil.copyfile(os.path.join(helferlein_path, src),
                     os.path.join(build_path, dst+".pyx"))
 
-for src, dst in helferlein.iteritems():
+for src, dst in helferlein.items():
     os.system("cython " + os.path.join(build_path, dst + ".pyx") + " --embed")
 
-for src, dst in helferlein.iteritems():
+for src, dst in helferlein.items():
     os.system("gcc -Os -I " + include_path + " -o " + os.path.join(output_path, dst) +
-              " " + os.path.join(build_path, dst+".c") + " -lpython2.7 -lpthread -lm -lutil -ldl")
+              " " + os.path.join(build_path, dst+".c") + " -lpython -lpthread -lm -lutil -ldl")
 
 shutil.rmtree(build_path)

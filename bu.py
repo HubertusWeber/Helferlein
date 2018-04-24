@@ -1,4 +1,4 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python3
 
 #
 # This Helferlein updates / upgrades all tools that need it mainly (as the name implies) homebrew
@@ -34,12 +34,11 @@ def npm():
 
 
 def my_pip():
-    print("upgrade pip itself")
-    os.system("pip install --upgrade pip")
-    print("upgrade pip packages")
-    packages = [
-        dist.project_name for dist in pip.get_installed_distributions()]
-    os.system("pip install --upgrade " + ' '.join(packages))
+    print("upgrade pip3 itself")
+    os.system("pip3 install --upgrade pip")
+    print("upgrade pip3 packages")
+    packages = [dist.project_name for dist in pip.get_installed_distributions()]
+    os.system("pip3 install --upgrade " + ' '.join(packages))
 
 
 def alle():
