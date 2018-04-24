@@ -6,6 +6,7 @@
 #
 
 import os
+from pip import _internal as pip
 import sys
 
 
@@ -32,26 +33,27 @@ def npm():
     os.system("npm up")
 
 
-def pip():
+def my_pip():
     print("upgrade pip itself")
     os.system("pip install --upgrade pip")
     print("upgrade pip packages")
-    os.system(
-        "pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U")
+    packages = [
+        dist.project_name for dist in pip.get_installed_distributions()]
+    os.system("pip install --upgrade " + ' '.join(packages))
 
 
 def alle():
     brew()
     tldr()
     npm()
-    pip()
+    my_pip()
 
 
 commands = {
     "brew": brew,
     "tldr": tldr,
     "npm": npm,
-    "pip": pip,
+    "pip": my_pip,
     "alle": alle,
 }
 

@@ -7,7 +7,6 @@
 
 import os
 import sys
-import time
 
 if len(sys.argv) > 1:
     working_dir = os.path.abspath(sys.argv[1])
