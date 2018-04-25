@@ -64,8 +64,13 @@ def help_message():
         print(command)
 
 
-try:
-    commands[sys.argv[1]]()
-except:
-    help_message()
-    exit(2)
+def main():
+    try:
+        commands[sys.argv[1]]()
+    except:
+        help_message()
+        exit(2)
+
+
+if __name__ == '__main__':
+    main()

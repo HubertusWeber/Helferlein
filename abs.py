@@ -8,7 +8,13 @@
 import os
 import sys
 
-if len(sys.argv) > 1:
-    print(os.path.abspath(sys.argv[1]))
-else:
-    print(os.getcwd())
+
+def main():
+    if len(sys.argv) > 1:
+        print(os.path.abspath(sys.argv[1]))
+    else:
+        print(os.getcwd())
+
+
+if __name__ == '__main__':
+    main()

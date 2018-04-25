@@ -7,5 +7,11 @@
 import os
 import sys
 
-os.system("git remote add bitbucket " + sys.argv[1])
-os.system("git push --mirror bitbucket")
+
+def main():
+    os.system("git remote add bitbucket " + sys.argv[1])
+    os.system("git push --mirror bitbucket")
+
+
+if __name__ == '__main__':
+    main()

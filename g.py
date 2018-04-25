@@ -7,6 +7,11 @@
 import os
 import sys
 
-args = str.join(" ", sys.argv[1:])
 
-os.system("grep -rnw . -e \"" + args + "\" --color=always")
+def main():
+    args = str.join(" ", sys.argv[1:])
+    os.system("grep -rnw . -e \"" + args + "\" --color=always")
+
+
+if __name__ == '__main__':
+    main()

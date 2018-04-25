@@ -40,8 +40,13 @@ def help_message():
         print(server)
 
 
-try:
-    servers[sys.argv[1]]()
-except:
-    help_message()
-    exit(2)
+def main():
+    try:
+        servers[sys.argv[1]]()
+    except:
+        help_message()
+        exit(2)
+
+
+if __name__ == '__main__':
+    main()
